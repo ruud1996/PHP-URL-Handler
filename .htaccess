@@ -1,0 +1,5 @@
+RewriteEngine On
+
+RewriteRule ^pages/.*$ urlhandler.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ urlhandler.php [QSA,L]
